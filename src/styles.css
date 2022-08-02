@@ -177,6 +177,7 @@ h2 {
   width: 100%;
   font-size: 16px;
   resize: none;
+
 }
 
 .form > * + * {
@@ -195,4 +196,10 @@ h2 {
 
 .form__submit:hover {
   background-color: white;
+}
+.checkbox-list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 2rem;
 }

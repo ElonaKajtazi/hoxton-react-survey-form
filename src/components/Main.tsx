@@ -16,12 +16,12 @@ function Main() {
           <h3>
             What would you say that are the best features of your rubber duck?
           </h3>
-          <ul>
+          <ul className="checkbox-list">
             <li>
               <input
                 type="checkbox"
                 name="best-features"
-                id="best-worst-feauters-1"
+                id="best-feauters-1"
               />
               <label htmlFor="best-feauters-1">It's yellow!</label>
             </li>
@@ -53,7 +53,7 @@ function Main() {
           <h3>
             What would you say that are the worst bits of your rubber duck?
           </h3>
-          <ul>
+          <ul className="checkbox-list">
             <li>
               <input
                 type="checkbox"
@@ -126,6 +126,51 @@ function Main() {
             </li>
           </ul>
           <h3>How do you rate your rubber duck logo?</h3>
+          <ul className="form__group radio">
+            <li>
+              <input type="radio" name="logo" id="logo-1" />
+              <label htmlFor="logo-1">1</label>
+            </li>
+            <li>
+              <input type="radio" name="logo" id="logo-2" />
+              <label htmlFor="logo-2">2</label>
+            </li>
+            <li>
+              <input type="radio" name="logo" id="logo-3" />
+              <label htmlFor="logo-3">3</label>
+            </li>
+            <li>
+              <input type="radio" name="logo" id="logo-4" />
+              <label htmlFor="logo-4">4</label>
+            </li>
+          </ul>
+          <h3>How do you like to spend time with your rubber duck?</h3>
+          <ul className="checkbox-list">
+            <li>
+              <input type="checkbox" name="time" id="time-1" />
+              <label htmlFor="time-1">It's yellow!</label>
+            </li>
+            <li>
+              <input type="checkbox" name="time" id="time-2" />
+              <label htmlFor="time-2">Bathing </label>
+            </li>
+            <li>
+              <input type="checkbox" name="time" id="time-3" />
+              <label htmlFor="time-3">Chatting </label>
+            </li>
+            <li>
+              <input type="checkbox" name="time" id="time-4" />
+              <label htmlFor="time-4">I don't like to spend time with it</label>
+            </li>
+          </ul>
+
+          <h3>What else have you got to say about your rubber duck?</h3>
+          <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+          <h3>Put your name here (if you feel like it): </h3>
+          <input type="text" name="name" />
+          <h3>Leave us your email pretty please??</h3>
+          <input type="text" name="email" />
+          <button className="form__submit">Submit Survey!</button>
         </form>
       </section>
     </main>
