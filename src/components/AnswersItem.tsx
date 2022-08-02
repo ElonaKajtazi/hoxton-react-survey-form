@@ -7,7 +7,7 @@ export type AnswerItemType = {
   logo: number;
   bestFeatures: string[];
   worstFeatures: string[];
-  timeSpent: number;
+  timeSpent: string[];
   review: string;
   email: string;
 };

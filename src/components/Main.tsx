@@ -1,17 +1,27 @@
 import { useState } from "react";
+import AnswersItem from "./AnswersItem";
 import ItemsList from "./ItemsList";
-import { initialForm } from "../App";
+import { AnswerItemType } from "./AnswersItem";
 
 function Main() {
   // State for the challenge #3
   const [open, setOpen] = useState(false);
-
+  const initialForm: AnswerItemType = {
+    review: "",
+    email: "",
+    username: "",
+    consistency: 0,
+    colour: 0,
+    logo: 0,
+    bestFeatures: [],
+    worstFeatures: [],
+    timeSpent: [],
+  };
   return (
     <main className="main">
       <section className={`main__list ${open ? "open" : ""}`}>
         <h2>Answers list</h2>
-
-        {/* answers should go here */}
+        <AnswersItem answerItem={initialForm} />
       </section>
       <section className="main__form">
         <form
