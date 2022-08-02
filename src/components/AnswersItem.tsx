@@ -1,7 +1,15 @@
 import ItemsList from "./ItemsList";
 
 export type AnswerItemType = {
-  // fix me
+  username: string;
+  consistency: number;
+  colour: number;
+  logo: number;
+  bestFeatures: string[];
+  worstFeatures: string[];
+  timeSpent: number;
+  review: string;
+  email: string;
 };
 
 type Props = {
@@ -18,7 +26,7 @@ export default function AnswersItem({ answerItem }: Props) {
     timeSpent,
     review,
     bestFeatures,
-    worstFeatures
+    worstFeatures,
   } = answerItem;
   return (
     <li>
