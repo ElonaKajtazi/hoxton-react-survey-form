@@ -21,6 +21,7 @@ function Main() {
     <main className="main">
       <section className={`main__list ${open ? "open" : ""}`}>
         <h2>Answers list</h2>
+        {/* This is not working!!*/}
         <AnswersItem answerItem={initialForm} />
       </section>
       <section className="main__form">
@@ -72,7 +73,6 @@ function Main() {
                 name="best-features"
                 id="best-feauters-1"
                 value="colour"
-                
               />
               <label htmlFor="best-feauters-1">It's yellow!</label>
             </li>
@@ -243,11 +243,17 @@ function Main() {
           </ul>
 
           <h3>What else have you got to say about your rubber duck?</h3>
-          <textarea name="review" id="textarea" cols={30} rows={10}></textarea>
+          <textarea
+            name="review"
+            id="textarea"
+            cols={30}
+            rows={10}
+            required
+          ></textarea>
           <h3>Put your name here (if you feel like it): </h3>
-          <input type="text" name="username" />
+          <input type="text" name="username" required/>
           <h3>Leave us your email pretty please??</h3>
-          <input type="text" name="email" />
+          <input type="text" name="email" required/>
           <button className="form__submit">Submit Survey!</button>
         </form>
       </section>
